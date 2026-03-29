@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Recipes — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar">
+    <div class="navbar__logo">Delicious Recipes</div>
+    <div class="navbar__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="navbar__links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero__text fade-up">
+      <span class="hero__tag">🍴 Fresh &amp; Flavorful</span>
+      <h1 class="hero__title">Cook with <em>Passion,</em><br>Eat with Joy</h1>
+      <p class="hero__subtitle">Discover hand-picked recipes from around the world — simple enough for weeknights, impressive enough for guests.</p>
+      <a href="recipes.html" class="btn btn-primary">Browse All Recipes</a>
+      &nbsp;&nbsp;
+      <a href="about.html" class="btn btn-outline">Our Story</a>
+    </div>
+    <div class="hero__image fade-up delay-2">
+      <img
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=720&q=80"
+        alt="Beautiful food spread"
+      />
+    </div>
+  </section>
+
+  <!-- ── Stats Band ── -->
+  <div class="stats-band">
+    <div class="stats-grid">
+      <div>
+        <span class="stat__number">50+</span>
+        <span class="stat__label">Recipes</span>
+      </div>
+      <div>
+        <span class="stat__number">5</span>
+        <span class="stat__label">Categories</span>
+      </div>
+      <div>
+        <span class="stat__number">10K+</span>
+        <span class="stat__label">Happy Cooks</span>
+      </div>
+      <div>
+        <span class="stat__number">3</span>
+        <span class="stat__label">Skill Levels</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Featured Recipes ── -->
+  <section class="section section--alt">
+    <div class="section__header">
+      <span class="section__eyebrow">Hand-Picked for You</span>
+      <h2 class="section__title">Featured Recipes</h2>
+      <div class="section__divider"></div>
+    </div>
+
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="card__image-wrap">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Pasta Primavera" />
+          <span class="card__badge badge-easy">Easy</span>
+        </div>
+        <div class="card__body">
+          <span class="card__category">🥦 Vegetarian</span>
+          <h3 class="card__title">Creamy Pasta Primavera</h3>
+          <div class="card__meta">
+            <span>⏱ 25 min</span>
+            <span>👤 4 servings</span>
+          </div>
+          <a href="recipe-pasta.html" class="btn btn-outline card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card__image-wrap">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Smash Burger" />
+          <span class="card__badge badge-medium">Medium</span>
+        </div>
+        <div class="card__body">
+          <span class="card__category">🥩 Non-Veg</span>
+          <h3 class="card__title">Classic Smash Burger</h3>
+          <div class="card__meta">
+            <span>⏱ 30 min</span>
+            <span>👤 2 servings</span>
+          </div>
+          <a href="recipe-burger.html" class="btn btn-outline card__link">View Recipe →</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card__image-wrap">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Mango Cheesecake" />
+          <span class="card__badge badge-hard">Hard</span>
+        </div>
+        <div class="card__body">
+          <span class="card__category">🍰 Dessert</span>
+          <h3 class="card__title">No-Bake Mango Cheesecake</h3>
+          <div class="card__meta">
+            <span>⏱ 40 min</span>
+            <span>👤 8 servings</span>
+          </div>
+          <a href="recipe-cheesecake.html" class="btn btn-outline card__link">View Recipe →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top: 44px;">
+      <a href="recipes.html" class="btn btn-primary">See All 5 Recipes →</a>
+    </div>
+  </section>
+
+  <!-- ── Why Us ── -->
+  <section class="section">
+    <div class="section__header">
+      <span class="section__eyebrow">Why We're Different</span>
+      <h2 class="section__title">Food Made with Love</h2>
+      <div class="section__divider"></div>
+    </div>
+    <div class="about-values" style="max-width:900px; margin: 0 auto;">
+      <div class="value-item">
+        <h4>🌿 Fresh Ingredients</h4>
+        <p>Every recipe is built around seasonal, wholesome ingredients anyone can find.</p>
+      </div>
+      <div class="value-item">
+        <h4>📏 Tested Proportions</h4>
+        <p>We test every recipe multiple times so yours turns out perfect every time.</p>
+      </div>
+      <div class="value-item">
+        <h4>🕐 Time-Conscious</h4>
+        <p>Prep times are honest — no surprises. We respect your busy schedule.</p>
+      </div>
+      <div class="value-item">
+        <h4>🌍 Global Flavors</h4>
+        <p>From Indian dals to Italian pastas — explore flavors from every corner of the world.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-logo">Delicious Recipes</div>
+        <p class="footer__brand-desc">A curated collection of recipes crafted with care. From beginner-friendly to chef-level — there's something for everyone.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Recipes</p>
+        <ul class="footer__links">
+          <li><a href="recipe-pasta.html">Pasta Primavera</a></li>
+          <li><a href="recipe-burger.html">Smash Burger</a></li>
+          <li><a href="recipe-cheesecake.html">Mango Cheesecake</a></li>
+          <li><a href="recipe-dal.html">Dal Tadka</a></li>
+          <li><a href="recipe-salad.html">Greek Salad</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Pages</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">All Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Categories</p>
+        <ul class="footer__links">
+          <li><a href="recipes.html">🥦 Vegetarian</a></li>
+          <li><a href="recipes.html">🥩 Non-Veg</a></li>
+          <li><a href="recipes.html">🍰 Desserts</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 <span>Delicious Recipes</span>. Made with ❤️ by <span>Vedant</span>.</p>
+      <p class="footer__copy">BTech | Web Development Assignment</p>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const links = document.getElementById('nav-links');
+    ham.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>

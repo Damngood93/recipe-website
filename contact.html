@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Delicious Recipes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__logo">Delicious Recipes</div>
+    <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <ul class="navbar__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-banner">
+    <h1>Get in Touch</h1>
+    <p>Have a recipe request, feedback, or just want to say hello? We'd love to hear from you.</p>
+  </div>
+
+  <div class="contact-layout">
+
+    <!-- Left: Info -->
+    <div class="contact-info">
+      <span class="section__eyebrow">Contact Us</span>
+      <h2>Let's Talk Food</h2>
+      <p>Whether you have a question about a recipe, want to suggest a dish, or have feedback on the website — drop us a message and we'll get back to you within 24 hours.</p>
+
+      <div class="contact-detail">
+        <div class="contact-detail__icon">📧</div>
+        <div class="contact-detail__text">
+          <strong>Email</strong>
+          <span>hello@deliciousrecipes.com</span>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail__icon">📍</div>
+        <div class="contact-detail__text">
+          <strong>Location</strong>
+          <span>Hyderabad, India</span>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail__icon">🕐</div>
+        <div class="contact-detail__text">
+          <strong>Response Time</strong>
+          <span>Within 24 hours</span>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="contact-detail__icon">📱</div>
+        <div class="contact-detail__text">
+          <strong>Social Media</strong>
+          <span>@deliciousrecipes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Form -->
+    <div class="contact-form-card">
+      <h3 style="margin-bottom: 24px; font-size: 1.4rem;">Send a Message</h3>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" placeholder="Vedant" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" placeholder="Kumar" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="your@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <select id="subject">
+          <option value="" disabled selected>Select a topic…</option>
+          <option>Recipe Request</option>
+          <option>Website Feedback</option>
+          <option>Collaboration</option>
+          <option>General Question</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Tell us what's on your mind…"></textarea>
+      </div>
+
+      <button class="btn btn-primary" style="width: 100%; justify-content: center;">
+        Send Message ✉️
+      </button>
+
+      <p style="font-size: 0.78rem; color: var(--light-mid); margin-top: 14px; margin-bottom: 0; text-align: center;">
+        We read every message personally and reply within 24 hours.
+      </p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div><div class="footer__brand-logo">Delicious Recipes</div><p class="footer__brand-desc">A curated collection of recipes crafted with care.</p></div>
+      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-pasta.html">Pasta Primavera</a></li><li><a href="recipe-burger.html">Smash Burger</a></li><li><a href="recipe-cheesecake.html">Mango Cheesecake</a></li><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-salad.html">Greek Salad</a></li></ul></div>
+      <div><p class="footer__col-title">Pages</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="recipes.html">All Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🥩 Non-Veg</a></li><li><a href="recipes.html">🍰 Desserts</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 <span>Delicious Recipes</span>. Made with ❤️ by <span>Vedant</span>.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger').addEventListener('click', () =>
+      document.getElementById('nav-links').classList.toggle('open'));
+  </script>
+</body>
+</html>
