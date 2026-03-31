@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delicious Recipes — Home</title>
+  <title>Rasoi — Authentic Indian Recipes</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- ── Navbar ── -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <div class="navbar__logo">Delicious Recipes</div>
-    <div class="navbar__hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
+    <div class="navbar__logo">
+      <span class="navbar__logo-main">Rasoi</span>
+      <span class="navbar__logo-sub">रसोई — The Kitchen</span>
     </div>
+    <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="recipes.html">Recipes</a></li>
@@ -22,156 +23,163 @@
     </ul>
   </nav>
 
-  <!-- ── Hero ── -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero__text fade-up">
-      <span class="hero__tag">🍴 Fresh &amp; Flavorful</span>
-      <h1 class="hero__title">Cook with <em>Passion,</em><br>Eat with Joy</h1>
-      <p class="hero__subtitle">Discover hand-picked recipes from around the world — simple enough for weeknights, impressive enough for guests.</p>
-      <a href="recipes.html" class="btn btn-primary">Browse All Recipes</a>
-      &nbsp;&nbsp;
-      <a href="about.html" class="btn btn-outline">Our Story</a>
+    <div class="hero__left">
+      <div class="hero__eyebrow fade-up">Authentic Indian Cuisine</div>
+      <h1 class="hero__title fade-up d1">
+        Flavours<br>from the<br><em>Heart</em>
+      </h1>
+      <span class="hero__title-deva fade-up d2">दिल से बना खाना</span>
+      <p class="hero__desc fade-up d3">
+        Every dish tells a story of spices, seasons, and generations. Explore recipes rooted in the rich culinary traditions of India.
+      </p>
+      <div class="hero__cta fade-up d4">
+        <a href="recipes.html" class="btn btn-fire"><span>Explore Recipes</span></a>
+        <a href="about.html" class="btn btn-ghost">Our Story</a>
+      </div>
     </div>
-    <div class="hero__image fade-up delay-2">
-      <img
-        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=720&q=80"
-        alt="Beautiful food spread"
-      />
+    <div class="hero__right">
+      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=900&q=85" alt="Indian food spread" />
+      <div class="hero__right-label">
+        <span>Dal Tadka</span>
+        <span style="font-size:0.7rem; color: rgba(245,166,35,0.6);">Featured today</span>
+      </div>
     </div>
   </section>
 
-  <!-- ── Stats Band ── -->
-  <div class="stats-band">
-    <div class="stats-grid">
-      <div>
-        <span class="stat__number">50+</span>
-        <span class="stat__label">Recipes</span>
-      </div>
-      <div>
-        <span class="stat__number">5</span>
-        <span class="stat__label">Categories</span>
-      </div>
-      <div>
-        <span class="stat__number">10K+</span>
-        <span class="stat__label">Happy Cooks</span>
-      </div>
-      <div>
-        <span class="stat__number">3</span>
-        <span class="stat__label">Skill Levels</span>
-      </div>
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker__inner">
+      <span class="ticker__item">Butter Chicken</span>
+      <span class="ticker__item">Dal Makhani</span>
+      <span class="ticker__item">Biryani</span>
+      <span class="ticker__item">Palak Paneer</span>
+      <span class="ticker__item">Chole Bhature</span>
+      <span class="ticker__item">Gajar Ka Halwa</span>
+      <span class="ticker__item">Masala Dosa</span>
+      <span class="ticker__item">Rogan Josh</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="ticker__item">Butter Chicken</span>
+      <span class="ticker__item">Dal Makhani</span>
+      <span class="ticker__item">Biryani</span>
+      <span class="ticker__item">Palak Paneer</span>
+      <span class="ticker__item">Chole Bhature</span>
+      <span class="ticker__item">Gajar Ka Halwa</span>
+      <span class="ticker__item">Masala Dosa</span>
+      <span class="ticker__item">Rogan Josh</span>
     </div>
   </div>
 
-  <!-- ── Featured Recipes ── -->
-  <section class="section section--alt">
+  <!-- Featured Recipe -->
+  <section class="section section--dark">
     <div class="section__header">
-      <span class="section__eyebrow">Hand-Picked for You</span>
-      <h2 class="section__title">Featured Recipes</h2>
-      <div class="section__divider"></div>
+      <div class="section__kicker">Recipe of the Week</div>
+      <h2 class="section__title">Today's <strong>Featured Dish</strong></h2>
+      <div class="section__rule"></div>
+    </div>
+
+    <div class="featured">
+      <div class="featured__image">
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Butter Chicken" />
+        <span class="featured__tag">⭐ Staff Pick</span>
+      </div>
+      <div class="featured__body">
+        <div class="featured__number">01</div>
+        <span class="featured__category">🍗 Non-Vegetarian · North Indian</span>
+        <h2 class="featured__title">Murgh Makhani<br><em style="font-style:italic; color: var(--muted); font-size:0.7em;">Butter Chicken</em></h2>
+        <p class="featured__desc">The dish that conquered the world. Tender chicken in a velvety tomato-cream sauce, perfumed with cardamom and finished with cold butter. A masterpiece of the Punjabi kitchen.</p>
+        <div class="featured__stats">
+          <div class="stat"><span class="stat__val">45</span><span class="stat__key">Minutes</span></div>
+          <div class="stat"><span class="stat__val">4</span><span class="stat__key">Servings</span></div>
+          <div class="stat"><span class="stat__val">Med</span><span class="stat__key">Difficulty</span></div>
+        </div>
+        <a href="recipe-butter-chicken.html" class="btn btn-saffron" style="align-self: flex-start;">View Full Recipe →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Recipes Preview -->
+  <section class="section">
+    <div class="section__header section__header--center">
+      <div class="section__kicker">The Collection</div>
+      <h2 class="section__title">Our <strong>Recipes</strong></h2>
+      <div class="section__rule"></div>
     </div>
 
     <div class="cards-grid">
 
-      <!-- Card 1 -->
-      <article class="card">
-        <div class="card__image-wrap">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80" alt="Pasta Primavera" />
-          <span class="card__badge badge-easy">Easy</span>
+      <article class="rcard">
+        <div class="rcard__img">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Dal Tadka" />
+          <span class="rcard__level level-easy">Easy</span>
         </div>
-        <div class="card__body">
-          <span class="card__category">🥦 Vegetarian</span>
-          <h3 class="card__title">Creamy Pasta Primavera</h3>
-          <div class="card__meta">
-            <span>⏱ 25 min</span>
-            <span>👤 4 servings</span>
+        <div class="rcard__body">
+          <span class="rcard__cat">🥦 Vegetarian · North Indian</span>
+          <h3 class="rcard__title">Dal Tadka</h3>
+          <p class="rcard__desc">Yellow lentils simmered to a creamy perfection and finished with a blazing ghee tempering of cumin, garlic, and dried chillies.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div>
+            <a href="recipe-dal.html" class="rcard__link">View →</a>
           </div>
-          <a href="recipe-pasta.html" class="btn btn-outline card__link">View Recipe →</a>
         </div>
       </article>
 
-      <!-- Card 2 -->
-      <article class="card">
-        <div class="card__image-wrap">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80" alt="Smash Burger" />
-          <span class="card__badge badge-medium">Medium</span>
+      <article class="rcard">
+        <div class="rcard__img">
+          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken" />
+          <span class="rcard__level level-medium">Medium</span>
         </div>
-        <div class="card__body">
-          <span class="card__category">🥩 Non-Veg</span>
-          <h3 class="card__title">Classic Smash Burger</h3>
-          <div class="card__meta">
-            <span>⏱ 30 min</span>
-            <span>👤 2 servings</span>
+        <div class="rcard__body">
+          <span class="rcard__cat">🍗 Non-Veg · North Indian</span>
+          <h3 class="rcard__title">Murgh Makhani</h3>
+          <p class="rcard__desc">The iconic butter chicken — smoky marinated chicken in a rich, spiced tomato-cream sauce. The dish that made Indian food famous worldwide.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div>
+            <a href="recipe-butter-chicken.html" class="rcard__link">View →</a>
           </div>
-          <a href="recipe-burger.html" class="btn btn-outline card__link">View Recipe →</a>
         </div>
       </article>
 
-      <!-- Card 3 -->
-      <article class="card">
-        <div class="card__image-wrap">
-          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Mango Cheesecake" />
-          <span class="card__badge badge-hard">Hard</span>
+      <article class="rcard">
+        <div class="rcard__img">
+          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Palak Paneer" />
+          <span class="rcard__level level-easy">Easy</span>
         </div>
-        <div class="card__body">
-          <span class="card__category">🍰 Dessert</span>
-          <h3 class="card__title">No-Bake Mango Cheesecake</h3>
-          <div class="card__meta">
-            <span>⏱ 40 min</span>
-            <span>👤 8 servings</span>
+        <div class="rcard__body">
+          <span class="rcard__cat">🥦 Vegetarian · Punjabi</span>
+          <h3 class="rcard__title">Palak Paneer</h3>
+          <p class="rcard__desc">Pillowy cubes of fresh cottage cheese bathed in a vibrant, silky spinach gravy scented with ginger, garlic, and warming spices.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div>
+            <a href="recipe-palak.html" class="rcard__link">View →</a>
           </div>
-          <a href="recipe-cheesecake.html" class="btn btn-outline card__link">View Recipe →</a>
         </div>
       </article>
 
     </div>
 
-    <div style="text-align:center; margin-top: 44px;">
-      <a href="recipes.html" class="btn btn-primary">See All 5 Recipes →</a>
+    <div style="text-align:center; margin-top: 56px;">
+      <a href="recipes.html" class="btn btn-ghost">See All 5 Recipes →</a>
     </div>
   </section>
 
-  <!-- ── Why Us ── -->
-  <section class="section">
-    <div class="section__header">
-      <span class="section__eyebrow">Why We're Different</span>
-      <h2 class="section__title">Food Made with Love</h2>
-      <div class="section__divider"></div>
-    </div>
-    <div class="about-values" style="max-width:900px; margin: 0 auto;">
-      <div class="value-item">
-        <h4>🌿 Fresh Ingredients</h4>
-        <p>Every recipe is built around seasonal, wholesome ingredients anyone can find.</p>
-      </div>
-      <div class="value-item">
-        <h4>📏 Tested Proportions</h4>
-        <p>We test every recipe multiple times so yours turns out perfect every time.</p>
-      </div>
-      <div class="value-item">
-        <h4>🕐 Time-Conscious</h4>
-        <p>Prep times are honest — no surprises. We respect your busy schedule.</p>
-      </div>
-      <div class="value-item">
-        <h4>🌍 Global Flavors</h4>
-        <p>From Indian dals to Italian pastas — explore flavors from every corner of the world.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Footer ── -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="footer__grid">
+    <div class="footer__top">
       <div>
-        <div class="footer__brand-logo">Delicious Recipes</div>
-        <p class="footer__brand-desc">A curated collection of recipes crafted with care. From beginner-friendly to chef-level — there's something for everyone.</p>
+        <span class="footer__logo">Rasoi</span>
+        <span class="footer__logo-deva">रसोई — The Kitchen</span>
+        <p class="footer__tagline">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory. From street food to royal feasts.</p>
       </div>
       <div>
         <p class="footer__col-title">Recipes</p>
         <ul class="footer__links">
-          <li><a href="recipe-pasta.html">Pasta Primavera</a></li>
-          <li><a href="recipe-burger.html">Smash Burger</a></li>
-          <li><a href="recipe-cheesecake.html">Mango Cheesecake</a></li>
           <li><a href="recipe-dal.html">Dal Tadka</a></li>
-          <li><a href="recipe-salad.html">Greek Salad</a></li>
+          <li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li>
+          <li><a href="recipe-palak.html">Palak Paneer</a></li>
+          <li><a href="recipe-biryani.html">Vegetable Biryani</a></li>
+          <li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li>
         </ul>
       </div>
       <div>
@@ -187,21 +195,21 @@
         <p class="footer__col-title">Categories</p>
         <ul class="footer__links">
           <li><a href="recipes.html">🥦 Vegetarian</a></li>
-          <li><a href="recipes.html">🥩 Non-Veg</a></li>
-          <li><a href="recipes.html">🍰 Desserts</a></li>
+          <li><a href="recipes.html">🍗 Non-Veg</a></li>
+          <li><a href="recipes.html">🍚 Rice Dishes</a></li>
+          <li><a href="recipes.html">🍮 Desserts</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2025 <span>Delicious Recipes</span>. Made with ❤️ by <span>Vedant</span>.</p>
-      <p class="footer__copy">BTech | Web Development Assignment</p>
+      <p class="footer__copy">© 2025 <span>Rasoi</span> · Web Development Assignment · <span>Vedant Sharma</span></p>
+      <p class="footer__copy">BTech · South Asian University</p>
     </div>
   </footer>
 
   <script>
-    const ham = document.getElementById('hamburger');
-    const links = document.getElementById('nav-links');
-    ham.addEventListener('click', () => links.classList.toggle('open'));
+    document.getElementById('hamburger').addEventListener('click', () =>
+      document.getElementById('nav-links').classList.toggle('open'));
   </script>
 </body>
 </html>

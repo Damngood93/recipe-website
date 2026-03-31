@@ -3,131 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Delicious Recipes</title>
+  <title>Contact — Rasoi</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
   <nav class="navbar">
-    <div class="navbar__logo">Delicious Recipes</div>
+    <div class="navbar__logo"><span class="navbar__logo-main">Rasoi</span><span class="navbar__logo-sub">रसोई — The Kitchen</span></div>
     <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" class="active">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="page-banner">
-    <h1>Get in Touch</h1>
-    <p>Have a recipe request, feedback, or just want to say hello? We'd love to hear from you.</p>
+  <div class="page-banner" data-text="CONTACT">
+    <div class="page-banner__kicker">Get in Touch</div>
+    <h1 class="page-banner__title">Write to <strong>Us</strong></h1>
   </div>
 
-  <div class="contact-layout">
+  <section class="section">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <div class="section__kicker" style="margin-bottom:16px;">Contact</div>
+        <h2 class="section__title" style="font-size:2rem; margin-bottom:20px;">Let's Talk <strong>Food</strong></h2>
+        <p>Have a recipe request? Found an error in our instructions? Want to collaborate or share your version of one of our dishes? We read everything and reply within 24 hours.</p>
 
-    <!-- Left: Info -->
-    <div class="contact-info">
-      <span class="section__eyebrow">Contact Us</span>
-      <h2>Let's Talk Food</h2>
-      <p>Whether you have a question about a recipe, want to suggest a dish, or have feedback on the website — drop us a message and we'll get back to you within 24 hours.</p>
-
-      <div class="contact-detail">
-        <div class="contact-detail__icon">📧</div>
-        <div class="contact-detail__text">
-          <strong>Email</strong>
-          <span>hello@deliciousrecipes.com</span>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📧</div>
+          <div class="contact-detail__text">
+            <strong>Email</strong>
+            <span>hello@rasoi.in</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📍</div>
+          <div class="contact-detail__text">
+            <strong>Location</strong>
+            <span>New Delhi, India</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">🕐</div>
+          <div class="contact-detail__text">
+            <strong>Response Time</strong>
+            <span>Within 24 hours</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail__icon">📱</div>
+          <div class="contact-detail__text">
+            <strong>Instagram</strong>
+            <span>@rasoi.in</span>
+          </div>
         </div>
       </div>
 
-      <div class="contact-detail">
-        <div class="contact-detail__icon">📍</div>
-        <div class="contact-detail__text">
-          <strong>Location</strong>
-          <span>Hyderabad, India</span>
+      <div class="contact-right">
+        <h3>Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Vedant" />
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Sharma" />
+          </div>
         </div>
-      </div>
-
-      <div class="contact-detail">
-        <div class="contact-detail__icon">🕐</div>
-        <div class="contact-detail__text">
-          <strong>Response Time</strong>
-          <span>Within 24 hours</span>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" />
         </div>
-      </div>
-
-      <div class="contact-detail">
-        <div class="contact-detail__icon">📱</div>
-        <div class="contact-detail__text">
-          <strong>Social Media</strong>
-          <span>@deliciousrecipes</span>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option value="" disabled selected>Select a topic…</option>
+            <option>Recipe Request</option>
+            <option>Feedback</option>
+            <option>Collaboration</option>
+            <option>Other</option>
+          </select>
         </div>
+        <div class="form-group">
+          <label>Your Message</label>
+          <textarea placeholder="Tell us what's on your mind…"></textarea>
+        </div>
+        <button class="btn btn-saffron" style="width:100%;">Send Message ✉️</button>
+        <p style="font-size:0.72rem; color:var(--muted); margin-top:14px; text-align:center; margin-bottom:0;">We read and reply to every message personally.</p>
       </div>
     </div>
-
-    <!-- Right: Form -->
-    <div class="contact-form-card">
-      <h3 style="margin-bottom: 24px; font-size: 1.4rem;">Send a Message</h3>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-        <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" placeholder="Vedant" />
-        </div>
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" placeholder="Kumar" />
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="your@email.com" />
-      </div>
-
-      <div class="form-group">
-        <label for="subject">Subject</label>
-        <select id="subject">
-          <option value="" disabled selected>Select a topic…</option>
-          <option>Recipe Request</option>
-          <option>Website Feedback</option>
-          <option>Collaboration</option>
-          <option>General Question</option>
-          <option>Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Your Message</label>
-        <textarea id="message" placeholder="Tell us what's on your mind…"></textarea>
-      </div>
-
-      <button class="btn btn-primary" style="width: 100%; justify-content: center;">
-        Send Message ✉️
-      </button>
-
-      <p style="font-size: 0.78rem; color: var(--light-mid); margin-top: 14px; margin-bottom: 0; text-align: center;">
-        We read every message personally and reply within 24 hours.
-      </p>
-    </div>
-
-  </div>
+  </section>
 
   <footer class="footer">
-    <div class="footer__grid">
-      <div><div class="footer__brand-logo">Delicious Recipes</div><p class="footer__brand-desc">A curated collection of recipes crafted with care.</p></div>
-      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-pasta.html">Pasta Primavera</a></li><li><a href="recipe-burger.html">Smash Burger</a></li><li><a href="recipe-cheesecake.html">Mango Cheesecake</a></li><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-salad.html">Greek Salad</a></li></ul></div>
+    <div class="footer__top">
+      <div><span class="footer__logo">Rasoi</span><span class="footer__logo-deva">रसोई — The Kitchen</span><p class="footer__tagline">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory.</p></div>
+      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li><li><a href="recipe-palak.html">Palak Paneer</a></li><li><a href="recipe-biryani.html">Veg Biryani</a></li><li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li></ul></div>
       <div><p class="footer__col-title">Pages</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="recipes.html">All Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🥩 Non-Veg</a></li><li><a href="recipes.html">🍰 Desserts</a></li></ul></div>
+      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🍗 Non-Veg</a></li><li><a href="recipes.html">🍚 Rice Dishes</a></li><li><a href="recipes.html">🍮 Desserts</a></li></ul></div>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__copy">© 2025 <span>Delicious Recipes</span>. Made with ❤️ by <span>Vedant</span>.</p>
-    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2025 <span>Rasoi</span> · Web Development Assignment · <span>Vedant Sharma</span></p></div>
   </footer>
-
-  <script>
-    document.getElementById('hamburger').addEventListener('click', () =>
-      document.getElementById('nav-links').classList.toggle('open'));
-  </script>
+  <script>document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));</script>
 </body>
 </html>

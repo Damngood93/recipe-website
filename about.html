@@ -3,112 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Delicious Recipes</title>
+  <title>About — Rasoi</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
   <nav class="navbar">
-    <div class="navbar__logo">Delicious Recipes</div>
+    <div class="navbar__logo"><span class="navbar__logo-main">Rasoi</span><span class="navbar__logo-sub">रसोई — The Kitchen</span></div>
     <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="recipes.html">Recipes</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="about.html" class="active">About</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="page-banner">
-    <h1>About Us</h1>
-    <p>The story behind Delicious Recipes and why we love what we do.</p>
+  <div class="page-banner" data-text="ABOUT">
+    <div class="page-banner__kicker">Our Philosophy</div>
+    <h1 class="page-banner__title">About <strong>Rasoi</strong></h1>
   </div>
 
-  <div class="about-grid">
+  <!-- Split section -->
+  <div class="about-split">
     <div class="about-image">
-      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=720&q=80" alt="Chef preparing food" />
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Indian kitchen" />
     </div>
     <div class="about-text">
-      <span class="section__eyebrow">Our Story</span>
-      <h2>Cooking is our Love Language</h2>
-      <p>Delicious Recipes was born out of a simple belief: that good food brings people together. We started as a small collection of family recipes passed down through generations, and grew into a platform dedicated to sharing the joy of cooking with everyone — from first-time cooks to seasoned home chefs.</p>
-      <p>Every recipe on this site has been cooked, tasted, adjusted, and cooked again. We don't publish anything we wouldn't be proud to serve at our own table.</p>
-      <p>Our mission is simple: make cooking approachable, exciting, and deeply rewarding. Whether you're making weeknight dinner or a show-stopping dessert, we've got you covered.</p>
+      <div class="section__kicker" style="margin-bottom:14px;">Our Story</div>
+      <h2 class="section__title" style="margin-bottom:20px;">Born in a <strong>Kitchen,</strong><br>Built with Love</h2>
+      <p>Rasoi — the Hindi word for kitchen — is more than a recipe website. It is a tribute to the grandmother who cooked by intuition, to the mother who measured spices in her palm, and to the street vendor who perfected one dish over thirty years.</p>
+      <p>Indian cuisine is not one cuisine — it is fifty. Each state, each season, each community has its own flavours, techniques, and stories. Rasoi exists to honour that complexity while making it accessible to anyone with a pan and an appetite.</p>
+      <p>Every recipe here is tested, retested, and written with the belief that good food is not about perfection — it is about intention.</p>
 
-      <div class="about-values">
-        <div class="value-item">
-          <h4>🌿 Fresh &amp; Seasonal</h4>
-          <p>We celebrate ingredients at their peak.</p>
+      <div class="values-grid">
+        <div class="val-item">
+          <span class="val-item__icon">🌶️</span>
+          <h4>Authentic Spicing</h4>
+          <p>We never dumb down spice levels. Real Indian food is bold.</p>
         </div>
-        <div class="value-item">
-          <h4>🌍 Global Perspective</h4>
-          <p>Recipes from every cuisine, every corner.</p>
+        <div class="val-item">
+          <span class="val-item__icon">🧘</span>
+          <h4>Regional Respect</h4>
+          <p>Every dish is credited to its region and tradition.</p>
         </div>
-        <div class="value-item">
-          <h4>📐 Precise &amp; Tested</h4>
-          <p>Every measurement is tested for consistency.</p>
+        <div class="val-item">
+          <span class="val-item__icon">⚗️</span>
+          <h4>Technique First</h4>
+          <p>We explain the why, not just the what.</p>
         </div>
-        <div class="value-item">
-          <h4>💛 Made with Love</h4>
-          <p>Food that nourishes body and soul.</p>
+        <div class="val-item">
+          <span class="val-item__icon">🕯️</span>
+          <h4>Seasonal Cooking</h4>
+          <p>Ingredients are best when they're in season.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Team Section -->
-  <section class="section section--alt">
-    <div class="section__header">
-      <span class="section__eyebrow">The People Behind the Pots</span>
-      <h2 class="section__title">Meet the Team</h2>
-      <div class="section__divider"></div>
+  <!-- Team -->
+  <section class="section section--dark">
+    <div class="section__header section__header--center">
+      <div class="section__kicker">The People</div>
+      <h2 class="section__title">Meet the <strong>Team</strong></h2>
+      <div class="section__rule"></div>
     </div>
-
-    <div class="cards-grid" style="max-width: 900px; margin: 0 auto;">
-      <div class="card" style="align-items: center; padding: 32px; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1583394293214-0b3b5c8fc7e6?w=200&q=80"
-             alt="Chef"
-             style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:16px; border: 3px solid var(--saffron);" />
-        <h3 style="margin-bottom:4px;">Vedant</h3>
-        <p style="font-size:0.78rem; color: var(--terracotta); font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Founder &amp; Head Chef</p>
-        <p style="font-size:0.88rem;">A BTech student with a passion for food, code, and everything in between.</p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1583394293214-0b3b5c8fc7e6?w=200&q=80" alt="Vedant" />
+        <h3>Vedant Sharma</h3>
+        <span class="team-card__role">Founder</span>
+        <p>BTech student, food enthusiast, and the person who wrote every line of this site's code.</p>
       </div>
-
-      <div class="card" style="align-items: center; padding: 32px; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80"
-             alt="Writer"
-             style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:16px; border: 3px solid var(--saffron);" />
-        <h3 style="margin-bottom:4px;">Priya Sharma</h3>
-        <p style="font-size:0.78rem; color: var(--terracotta); font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Recipe Writer</p>
-        <p style="font-size:0.88rem;">A food writer who believes every dish tells a story worth reading.</p>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=200&q=80" alt="Writer" />
+        <h3>Priya Nair</h3>
+        <span class="team-card__role">Recipe Writer</span>
+        <p>A food writer from Kerala with a particular talent for making complicated things feel simple.</p>
       </div>
-
-      <div class="card" style="align-items: center; padding: 32px; text-align: center;">
-        <img src="https://images.unsplash.com/photo-1578774204375-826dc5d996ed?w=200&q=80"
-             alt="Photographer"
-             style="width:100px; height:100px; border-radius:50%; object-fit:cover; margin-bottom:16px; border: 3px solid var(--saffron);" />
-        <h3 style="margin-bottom:4px;">Arjun Mehta</h3>
-        <p style="font-size:0.78rem; color: var(--terracotta); font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px;">Food Photographer</p>
-        <p style="font-size:0.88rem;">Making food look as irresistible in photos as it tastes in real life.</p>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1578774204375-826dc5d996ed?w=200&q=80" alt="Photographer" />
+        <h3>Rohan Das</h3>
+        <span class="team-card__role">Food Photographer</span>
+        <p>Based in Kolkata, Rohan photographs food the way it actually looks — not how it pretends to look.</p>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="footer__grid">
-      <div><div class="footer__brand-logo">Delicious Recipes</div><p class="footer__brand-desc">A curated collection of recipes crafted with care.</p></div>
-      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-pasta.html">Pasta Primavera</a></li><li><a href="recipe-burger.html">Smash Burger</a></li><li><a href="recipe-cheesecake.html">Mango Cheesecake</a></li><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-salad.html">Greek Salad</a></li></ul></div>
+    <div class="footer__top">
+      <div><span class="footer__logo">Rasoi</span><span class="footer__logo-deva">रसोई — The Kitchen</span><p class="footer__tagline">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory.</p></div>
+      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li><li><a href="recipe-palak.html">Palak Paneer</a></li><li><a href="recipe-biryani.html">Veg Biryani</a></li><li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li></ul></div>
       <div><p class="footer__col-title">Pages</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="recipes.html">All Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🥩 Non-Veg</a></li><li><a href="recipes.html">🍰 Desserts</a></li></ul></div>
+      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🍗 Non-Veg</a></li><li><a href="recipes.html">🍚 Rice Dishes</a></li><li><a href="recipes.html">🍮 Desserts</a></li></ul></div>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__copy">© 2025 <span>Delicious Recipes</span>. Made with ❤️ by <span>Vedant</span>.</p>
-    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2025 <span>Rasoi</span> · Web Development Assignment · <span>Vedant Sharma</span></p></div>
   </footer>
-
-  <script>
-    document.getElementById('hamburger').addEventListener('click', () =>
-      document.getElementById('nav-links').classList.toggle('open'));
-  </script>
+  <script>document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));</script>
 </body>
 </html>
