@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Recipes — Masala</title>
-  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <nav class="navbar">
-    <div class="navbar__logo"><span class="navbar__logo-main">Masala</span><span class="navbar__logo-sub">मसाला — The Spice</span></div>
+    <div class="navbar__logo"><span class="navbar__logo-main">Masala</span><span class="navbar__logo-sub">मसाला — The
+        Spice</span></div>
     <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
-      <li><a href="index.html">Home</a></li><li><a href="recipes.html" class="active">Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html" class="active">Recipes</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -19,30 +26,124 @@
     <h1>All <span>Recipes</span></h1>
   </div>
   <section class="section section--parchment">
-    <div class="search-wrap"><input type="text" placeholder="Search by dish or ingredient…"/><span class="search-wrap__icon">🔍</span></div>
+    <div class="search-wrap"><input type="text" placeholder="Search by dish or ingredient…" /><span
+        class="search-wrap__icon">🔍</span></div>
     <div class="cat-bar">
       <button class="cat-chip active">All</button>
       <button class="cat-chip">🥦 Vegetarian</button><button class="cat-chip">🍗 Non-Veg</button>
       <button class="cat-chip">🍚 Rice Dishes</button><button class="cat-chip">🍮 Desserts</button>
     </div>
     <div class="cards-grid">
-      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Dal Tadka"/><span class="rcard__level lvl-easy">Easy</span></div><div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · North Indian</span><h3 class="rcard__title">Dal Tadka</h3><p class="rcard__desc">Creamy yellow lentils with a fiery ghee and cumin tempering. The ultimate Indian comfort food.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div><a href="recipe-dal.html" class="rcard__link">View →</a></div></div></article>
-      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken"/><span class="rcard__level lvl-medium">Medium</span></div><div class="rcard__body"><span class="rcard__cat">🍗 Non-Veg · North Indian</span><h3 class="rcard__title">Murgh Makhani</h3><p class="rcard__desc">The iconic butter chicken in a rich, spiced tomato-cream sauce. World famous for good reason.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div><a href="recipe-butter-chicken.html" class="rcard__link">View →</a></div></div></article>
-      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Palak Paneer"/><span class="rcard__level lvl-easy">Easy</span></div><div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · Punjabi</span><h3 class="rcard__title">Palak Paneer</h3><p class="rcard__desc">Soft cottage cheese in a vibrant spinach gravy with ginger, garlic, and warming spices.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div><a href="recipe-palak.html" class="rcard__link">View →</a></div></div></article>
-      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani"/><span class="rcard__level lvl-hard">Hard</span></div><div class="rcard__body"><span class="rcard__cat">🍚 Rice Dish · Hyderabadi</span><h3 class="rcard__title">Vegetable Biryani</h3><p class="rcard__desc">Fragrant basmati rice layered with spiced vegetables, saffron milk, and caramelised onions, dum-cooked to perfection.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 75 min</span><span>👤 5</span></div><a href="recipe-biryani.html" class="rcard__link">View →</a></div></div></article>
-      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1666762533664-9b1e3aa84c3a?w=600&q=80" alt="Halwa"/><span class="rcard__level lvl-medium">Medium</span></div><div class="rcard__body"><span class="rcard__cat">🍮 Dessert · Punjabi</span><h3 class="rcard__title">Gajar Ka Halwa</h3><p class="rcard__desc">Slow-cooked grated carrots in full-fat milk and ghee, sweetened and crowned with nuts.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 60 min</span><span>👤 6</span></div><a href="recipe-halwa.html" class="rcard__link">View →</a></div></div></article>
+      <article class="rcard">
+        <div class="rcard__img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80"
+            alt="Dal Tadka" /><span class="rcard__level lvl-easy">Easy</span></div>
+        <div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · North Indian</span>
+          <h3 class="rcard__title">Dal Tadka</h3>
+          <p class="rcard__desc">Creamy yellow lentils with a fiery ghee and cumin tempering. The ultimate Indian
+            comfort food.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div><a href="recipe-dal.html"
+              class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard">
+        <div class="rcard__img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80"
+            alt="Butter Chicken" /><span class="rcard__level lvl-medium">Medium</span></div>
+        <div class="rcard__body"><span class="rcard__cat">🍗 Non-Veg · North Indian</span>
+          <h3 class="rcard__title">Murgh Makhani</h3>
+          <p class="rcard__desc">The iconic butter chicken in a rich, spiced tomato-cream sauce. World famous for good
+            reason.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div><a href="recipe-butter-chicken.html"
+              class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard">
+        <div class="rcard__img"><img
+            src="data:image/jpeg;base64,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"
+            alt="Palak Paneer" /><span class="rcard__level lvl-easy">Easy</span></div>
+        <div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · Punjabi</span>
+          <h3 class="rcard__title">Palak Paneer</h3>
+          <p class="rcard__desc">Soft cottage cheese in a vibrant spinach gravy with ginger, garlic, and warming spices.
+          </p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div><a href="recipe-palak.html"
+              class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard">
+        <div class="rcard__img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80"
+            alt="Biryani" /><span class="rcard__level lvl-hard">Hard</span></div>
+        <div class="rcard__body"><span class="rcard__cat">🍚 Rice Dish · Hyderabadi</span>
+          <h3 class="rcard__title">Vegetable Biryani</h3>
+          <p class="rcard__desc">Fragrant basmati rice layered with spiced vegetables, saffron milk, and caramelised
+            onions, dum-cooked to perfection.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 75 min</span><span>👤 5</span></div><a href="recipe-biryani.html"
+              class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
+      <article class="rcard">
+        <div class="rcard__img"><img src="https://images.unsplash.com/photo-1666762533664-9b1e3aa84c3a?w=600&q=80"
+            alt="Halwa" /><span class="rcard__level lvl-medium">Medium</span></div>
+        <div class="rcard__body"><span class="rcard__cat">🍮 Dessert · Punjabi</span>
+          <h3 class="rcard__title">Gajar Ka Halwa</h3>
+          <p class="rcard__desc">Slow-cooked grated carrots in full-fat milk and ghee, sweetened and crowned with nuts.
+          </p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 60 min</span><span>👤 6</span></div><a href="recipe-halwa.html"
+              class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
-  <script>document.querySelectorAll('.cat-chip').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.cat-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');});});</script>
+  <script>document.querySelectorAll('.cat-chip').forEach(b => { b.addEventListener('click', () => { document.querySelectorAll('.cat-chip').forEach(x => x.classList.remove('active')); b.classList.add('active'); }); });</script>
   <footer class="footer">
     <div class="footer__grid">
-      <div><div class="footer__logo-wrap"><span class="footer__logo">Masala</span><span class="footer__logo-deva">मसाला — The Spice</span></div><p class="footer__desc">A celebration of Indian cuisine.</p></div>
-      <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li><li><a href="recipe-palak.html">Palak Paneer</a></li><li><a href="recipe-biryani.html">Veg Biryani</a></li><li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li></ul></div>
-      <div><p class="footer__col-title">Pages</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="recipes.html">All Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🍗 Non-Veg</a></li><li><a href="recipes.html">🍚 Rice Dishes</a></li><li><a href="recipes.html">🍮 Desserts</a></li></ul></div>
+      <div>
+        <div class="footer__logo-wrap"><span class="footer__logo">Masala</span><span class="footer__logo-deva">मसाला —
+            The Spice</span></div>
+        <p class="footer__desc">A celebration of Indian cuisine.</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Recipes</p>
+        <ul class="footer__links">
+          <li><a href="recipe-dal.html">Dal Tadka</a></li>
+          <li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li>
+          <li><a href="recipe-palak.html">Palak Paneer</a></li>
+          <li><a href="recipe-biryani.html">Veg Biryani</a></li>
+          <li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Pages</p>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">All Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__col-title">Categories</p>
+        <ul class="footer__links">
+          <li><a href="recipes.html">🥦 Vegetarian</a></li>
+          <li><a href="recipes.html">🍗 Non-Veg</a></li>
+          <li><a href="recipes.html">🍚 Rice Dishes</a></li>
+          <li><a href="recipes.html">🍮 Desserts</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer__bottom"><p class="footer__copy">© 2025 <span>Masala</span> · Web Dev Assignment · <span>Vedant Sharma</span></p></div>
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2025 <span>Masala</span> · Web Dev Assignment · <span>Vedant Sharma</span></p>
+    </div>
   </footer>
-  <script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));</script>
+  <script>document.getElementById('hamburger').addEventListener('click', () => document.getElementById('nav-links').classList.toggle('open'));</script>
 </body>
+
 </html>
