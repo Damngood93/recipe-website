@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rasoi — Authentic Indian Recipes</title>
+  <title>Masala — Authentic Indian Recipes</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar__logo">
-      <span class="navbar__logo-main">Rasoi</span>
-      <span class="navbar__logo-sub">रसोई — The Kitchen</span>
+      <span class="navbar__logo-main">Masala</span>
+      <span class="navbar__logo-sub">मसाला — The Spice</span>
     </div>
     <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
@@ -25,99 +24,87 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero__left">
-      <div class="hero__eyebrow fade-up">Authentic Indian Cuisine</div>
-      <h1 class="hero__title fade-up d1">
-        Flavours<br>from the<br><em>Heart</em>
+    <div class="hero__text-wrap fade-up">
+      <div class="hero__tag">Authentic Indian Cuisine</div>
+      <h1 class="hero__title">
+        Where Every
+        <span class="accent">Spice</span>
+        Tells a Story
       </h1>
-      <span class="hero__title-deva fade-up d2">दिल से बना खाना</span>
-      <p class="hero__desc fade-up d3">
-        Every dish tells a story of spices, seasons, and generations. Explore recipes rooted in the rich culinary traditions of India.
-      </p>
-      <div class="hero__cta fade-up d4">
-        <a href="recipes.html" class="btn btn-fire"><span>Explore Recipes</span></a>
-        <a href="about.html" class="btn btn-ghost">Our Story</a>
+      <span class="hero__deva">मसालों की दुनिया में आपका स्वागत है</span>
+      <p class="hero__desc">From the smoky tandoors of Punjab to the coastal kitchens of Kerala — explore recipes that carry the soul of India in every bite.</p>
+      <div class="hero__btns">
+        <a href="recipes.html" class="btn btn-spice">Explore Recipes</a>
+        <a href="about.html" class="btn btn-outline-light">Our Story</a>
       </div>
     </div>
-    <div class="hero__right">
-      <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=900&q=85" alt="Indian food spread" />
-      <div class="hero__right-label">
-        <span>Dal Tadka</span>
-        <span style="font-size:0.7rem; color: rgba(245,166,35,0.6);">Featured today</span>
+
+    <div class="hero__image fade-up d3">
+      <div class="hero__image-frame">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&q=85" alt="Indian food" />
+        <div class="hero__image-label">
+          <strong>Dal Tadka</strong>
+          <span>Featured Today</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Ticker -->
-  <div class="ticker">
-    <div class="ticker__inner">
-      <span class="ticker__item">Butter Chicken</span>
-      <span class="ticker__item">Dal Makhani</span>
-      <span class="ticker__item">Biryani</span>
-      <span class="ticker__item">Palak Paneer</span>
-      <span class="ticker__item">Chole Bhature</span>
-      <span class="ticker__item">Gajar Ka Halwa</span>
-      <span class="ticker__item">Masala Dosa</span>
-      <span class="ticker__item">Rogan Josh</span>
-      <!-- Duplicate for seamless loop -->
-      <span class="ticker__item">Butter Chicken</span>
-      <span class="ticker__item">Dal Makhani</span>
-      <span class="ticker__item">Biryani</span>
-      <span class="ticker__item">Palak Paneer</span>
-      <span class="ticker__item">Chole Bhature</span>
-      <span class="ticker__item">Gajar Ka Halwa</span>
-      <span class="ticker__item">Masala Dosa</span>
-      <span class="ticker__item">Rogan Josh</span>
-    </div>
+  <!-- Spice band -->
+  <div class="spice-band">
+    <div class="spice-band__block">🌿 Turmeric</div>
+    <div class="spice-band__block">🌶️ Red Chilli</div>
+    <div class="spice-band__block">🫚 Cardamom</div>
+    <div class="spice-band__block">🌱 Coriander</div>
+    <div class="spice-band__block">⚫ Black Pepper</div>
   </div>
 
-  <!-- Featured Recipe -->
-  <section class="section section--dark">
+  <!-- Featured -->
+  <section class="section section--parchment">
     <div class="section__header">
-      <div class="section__kicker">Recipe of the Week</div>
-      <h2 class="section__title">Today's <strong>Featured Dish</strong></h2>
+      <div class="kicker">Recipe of the Week</div>
+      <h2 class="section__title">This Week's <em style="font-style:italic; color: var(--turmeric);">Featured Dish</em></h2>
       <div class="section__rule"></div>
     </div>
 
     <div class="featured">
       <div class="featured__image">
-        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80" alt="Butter Chicken" />
-        <span class="featured__tag">⭐ Staff Pick</span>
+        <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=900&q=80" alt="Butter Chicken" />
+        <span class="featured__sticker">⭐ Staff Pick</span>
       </div>
       <div class="featured__body">
-        <div class="featured__number">01</div>
-        <span class="featured__category">🍗 Non-Vegetarian · North Indian</span>
-        <h2 class="featured__title">Murgh Makhani<br><em style="font-style:italic; color: var(--muted); font-size:0.7em;">Butter Chicken</em></h2>
-        <p class="featured__desc">The dish that conquered the world. Tender chicken in a velvety tomato-cream sauce, perfumed with cardamom and finished with cold butter. A masterpiece of the Punjabi kitchen.</p>
+        <div class="featured__num">01</div>
+        <span class="featured__cat">🍗 Non-Veg · North Indian</span>
+        <h2 class="featured__title">Murgh Makhani<br><small style="font-size:0.55em; color:var(--text-light); font-style:italic;">Butter Chicken</small></h2>
+        <p class="featured__desc">The dish that conquered the world. Tender chicken in a velvety tomato-cream sauce, perfumed with cardamom, finished with cold butter. A masterpiece of the Punjabi kitchen.</p>
         <div class="featured__stats">
-          <div class="stat"><span class="stat__val">45</span><span class="stat__key">Minutes</span></div>
-          <div class="stat"><span class="stat__val">4</span><span class="stat__key">Servings</span></div>
-          <div class="stat"><span class="stat__val">Med</span><span class="stat__key">Difficulty</span></div>
+          <div><span class="fstat__val">45</span><span class="fstat__key">Minutes</span></div>
+          <div><span class="fstat__val">4</span><span class="fstat__key">Servings</span></div>
+          <div><span class="fstat__val">Med</span><span class="fstat__key">Difficulty</span></div>
         </div>
-        <a href="recipe-butter-chicken.html" class="btn btn-saffron" style="align-self: flex-start;">View Full Recipe →</a>
+        <a href="recipe-butter-chicken.html" class="btn btn-spice" style="align-self:flex-start;">View Full Recipe →</a>
       </div>
     </div>
   </section>
 
-  <!-- All Recipes Preview -->
-  <section class="section">
+  <!-- All recipes preview -->
+  <section class="section section--dark">
     <div class="section__header section__header--center">
-      <div class="section__kicker">The Collection</div>
-      <h2 class="section__title">Our <strong>Recipes</strong></h2>
+      <div class="kicker kicker--light">The Collection</div>
+      <h2 class="section__title section__title--light">Our <em style="font-style:italic; color:var(--saffron);">Recipes</em></h2>
       <div class="section__rule"></div>
     </div>
 
     <div class="cards-grid">
-
       <article class="rcard">
         <div class="rcard__img">
           <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Dal Tadka" />
-          <span class="rcard__level level-easy">Easy</span>
+          <span class="rcard__level lvl-easy">Easy</span>
         </div>
         <div class="rcard__body">
           <span class="rcard__cat">🥦 Vegetarian · North Indian</span>
           <h3 class="rcard__title">Dal Tadka</h3>
-          <p class="rcard__desc">Yellow lentils simmered to a creamy perfection and finished with a blazing ghee tempering of cumin, garlic, and dried chillies.</p>
+          <p class="rcard__desc">Creamy lentils with a blazing ghee and cumin tempering. The soul of Indian home cooking.</p>
           <div class="rcard__footer">
             <div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div>
             <a href="recipe-dal.html" class="rcard__link">View →</a>
@@ -127,29 +114,13 @@
 
       <article class="rcard">
         <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken" />
-          <span class="rcard__level level-medium">Medium</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🍗 Non-Veg · North Indian</span>
-          <h3 class="rcard__title">Murgh Makhani</h3>
-          <p class="rcard__desc">The iconic butter chicken — smoky marinated chicken in a rich, spiced tomato-cream sauce. The dish that made Indian food famous worldwide.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div>
-            <a href="recipe-butter-chicken.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="rcard">
-        <div class="rcard__img">
           <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Palak Paneer" />
-          <span class="rcard__level level-easy">Easy</span>
+          <span class="rcard__level lvl-easy">Easy</span>
         </div>
         <div class="rcard__body">
           <span class="rcard__cat">🥦 Vegetarian · Punjabi</span>
           <h3 class="rcard__title">Palak Paneer</h3>
-          <p class="rcard__desc">Pillowy cubes of fresh cottage cheese bathed in a vibrant, silky spinach gravy scented with ginger, garlic, and warming spices.</p>
+          <p class="rcard__desc">Soft cottage cheese in a vibrant spinach gravy scented with ginger, garlic, and garam masala.</p>
           <div class="rcard__footer">
             <div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div>
             <a href="recipe-palak.html" class="rcard__link">View →</a>
@@ -157,20 +128,37 @@
         </div>
       </article>
 
+      <article class="rcard">
+        <div class="rcard__img">
+          <img src="https://images.unsplash.com/photo-1666762533664-9b1e3aa84c3a?w=600&q=80" alt="Gajar Ka Halwa" />
+          <span class="rcard__level lvl-medium">Medium</span>
+        </div>
+        <div class="rcard__body">
+          <span class="rcard__cat">🍮 Dessert · Punjabi</span>
+          <h3 class="rcard__title">Gajar Ka Halwa</h3>
+          <p class="rcard__desc">Slow-cooked grated carrots in milk and ghee — a winter celebration crowned with nuts and cardamom.</p>
+          <div class="rcard__footer">
+            <div class="rcard__meta"><span>⏱ 60 min</span><span>👤 6</span></div>
+            <a href="recipe-halwa.html" class="rcard__link">View →</a>
+          </div>
+        </div>
+      </article>
     </div>
 
-    <div style="text-align:center; margin-top: 56px;">
-      <a href="recipes.html" class="btn btn-ghost">See All 5 Recipes →</a>
+    <div style="text-align:center; margin-top:52px;">
+      <a href="recipes.html" class="btn btn-outline-light">See All 5 Recipes →</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer__top">
+    <div class="footer__grid">
       <div>
-        <span class="footer__logo">Rasoi</span>
-        <span class="footer__logo-deva">रसोई — The Kitchen</span>
-        <p class="footer__tagline">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory. From street food to royal feasts.</p>
+        <div class="footer__logo-wrap">
+          <span class="footer__logo">Masala</span>
+          <span class="footer__logo-deva">मसाला — The Spice</span>
+        </div>
+        <p class="footer__desc">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory. From street food to royal feasts.</p>
       </div>
       <div>
         <p class="footer__col-title">Recipes</p>
@@ -178,7 +166,7 @@
           <li><a href="recipe-dal.html">Dal Tadka</a></li>
           <li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li>
           <li><a href="recipe-palak.html">Palak Paneer</a></li>
-          <li><a href="recipe-biryani.html">Vegetable Biryani</a></li>
+          <li><a href="recipe-biryani.html">Veg Biryani</a></li>
           <li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li>
         </ul>
       </div>
@@ -202,7 +190,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">© 2025 <span>Rasoi</span> · Web Development Assignment · <span>Vedant Sharma</span></p>
+      <p class="footer__copy">© 2025 <span>Masala</span> · Web Development Assignment · <span>Vedant Sharma</span></p>
       <p class="footer__copy">BTech · South Asian University</p>
     </div>
   </footer>

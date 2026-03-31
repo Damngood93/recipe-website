@@ -1,157 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipes — Rasoi</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Recipes — Masala</title>
+  <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-
   <nav class="navbar">
-    <div class="navbar__logo">
-      <span class="navbar__logo-main">Rasoi</span>
-      <span class="navbar__logo-sub">रसोई — The Kitchen</span>
-    </div>
+    <div class="navbar__logo"><span class="navbar__logo-main">Masala</span><span class="navbar__logo-sub">मसाला — The Spice</span></div>
     <div class="navbar__hamburger" id="hamburger"><span></span><span></span><span></span></div>
     <ul class="navbar__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="recipes.html" class="active">Recipes</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li><li><a href="recipes.html" class="active">Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <div class="page-banner" data-text="RASOI">
-    <div class="page-banner__kicker">The Full Collection</div>
-    <h1 class="page-banner__title">All <strong>Recipes</strong></h1>
+  <div class="page-banner" data-bg="RECIPES">
+    <div class="kicker kicker--light">The Full Collection</div>
+    <h1>All <span>Recipes</span></h1>
   </div>
-
-  <section class="section">
-
-    <div class="search-wrap">
-      <input type="text" placeholder="Search by dish or ingredient…" />
-      <span class="search-wrap__icon">🔍</span>
-    </div>
-
+  <section class="section section--parchment">
+    <div class="search-wrap"><input type="text" placeholder="Search by dish or ingredient…"/><span class="search-wrap__icon">🔍</span></div>
     <div class="cat-bar">
       <button class="cat-chip active">All</button>
-      <button class="cat-chip">🥦 Vegetarian</button>
-      <button class="cat-chip">🍗 Non-Veg</button>
-      <button class="cat-chip">🍚 Rice Dishes</button>
-      <button class="cat-chip">🍮 Desserts</button>
+      <button class="cat-chip">🥦 Vegetarian</button><button class="cat-chip">🍗 Non-Veg</button>
+      <button class="cat-chip">🍚 Rice Dishes</button><button class="cat-chip">🍮 Desserts</button>
     </div>
-
     <div class="cards-grid">
-
-      <article class="rcard">
-        <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Dal Tadka" />
-          <span class="rcard__level level-easy">Easy</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🥦 Vegetarian · North Indian</span>
-          <h3 class="rcard__title">Dal Tadka</h3>
-          <p class="rcard__desc">Creamy yellow lentils with a fiery ghee and cumin tempering. The ultimate comfort food of the Indian kitchen.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div>
-            <a href="recipe-dal.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="rcard">
-        <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken" />
-          <span class="rcard__level level-medium">Medium</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🍗 Non-Veg · North Indian</span>
-          <h3 class="rcard__title">Murgh Makhani</h3>
-          <p class="rcard__desc">The world-famous butter chicken — smoky, tender, and bathed in a velvety spiced tomato-cream sauce.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div>
-            <a href="recipe-butter-chicken.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="rcard">
-        <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Palak Paneer" />
-          <span class="rcard__level level-easy">Easy</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🥦 Vegetarian · Punjabi</span>
-          <h3 class="rcard__title">Palak Paneer</h3>
-          <p class="rcard__desc">Soft cottage cheese in a vibrant spinach gravy, spiced with ginger, garlic, and garam masala.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div>
-            <a href="recipe-palak.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="rcard">
-        <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani" />
-          <span class="rcard__level level-hard">Hard</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🍚 Rice Dish · Hyderabadi</span>
-          <h3 class="rcard__title">Vegetable Biryani</h3>
-          <p class="rcard__desc">Fragrant basmati rice layered with spiced vegetables, saffron milk, and caramelised onions — sealed and dum-cooked.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 75 min</span><span>👤 5</span></div>
-            <a href="recipe-biryani.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="rcard">
-        <div class="rcard__img">
-          <img src="https://images.unsplash.com/photo-1666762533664-9b1e3aa84c3a?w=600&q=80" alt="Gajar Ka Halwa" />
-          <span class="rcard__level level-medium">Medium</span>
-        </div>
-        <div class="rcard__body">
-          <span class="rcard__cat">🍮 Dessert · Punjabi</span>
-          <h3 class="rcard__title">Gajar Ka Halwa</h3>
-          <p class="rcard__desc">Slow-cooked grated carrots in full-fat milk, ghee, and sugar — a winter celebration in a bowl, crowned with nuts.</p>
-          <div class="rcard__footer">
-            <div class="rcard__meta"><span>⏱ 60 min</span><span>👤 6</span></div>
-            <a href="recipe-halwa.html" class="rcard__link">View →</a>
-          </div>
-        </div>
-      </article>
-
+      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80" alt="Dal Tadka"/><span class="rcard__level lvl-easy">Easy</span></div><div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · North Indian</span><h3 class="rcard__title">Dal Tadka</h3><p class="rcard__desc">Creamy yellow lentils with a fiery ghee and cumin tempering. The ultimate Indian comfort food.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 35 min</span><span>👤 4</span></div><a href="recipe-dal.html" class="rcard__link">View →</a></div></div></article>
+      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80" alt="Butter Chicken"/><span class="rcard__level lvl-medium">Medium</span></div><div class="rcard__body"><span class="rcard__cat">🍗 Non-Veg · North Indian</span><h3 class="rcard__title">Murgh Makhani</h3><p class="rcard__desc">The iconic butter chicken in a rich, spiced tomato-cream sauce. World famous for good reason.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 45 min</span><span>👤 4</span></div><a href="recipe-butter-chicken.html" class="rcard__link">View →</a></div></div></article>
+      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?w=600&q=80" alt="Palak Paneer"/><span class="rcard__level lvl-easy">Easy</span></div><div class="rcard__body"><span class="rcard__cat">🥦 Vegetarian · Punjabi</span><h3 class="rcard__title">Palak Paneer</h3><p class="rcard__desc">Soft cottage cheese in a vibrant spinach gravy with ginger, garlic, and warming spices.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 30 min</span><span>👤 3</span></div><a href="recipe-palak.html" class="rcard__link">View →</a></div></div></article>
+      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=600&q=80" alt="Biryani"/><span class="rcard__level lvl-hard">Hard</span></div><div class="rcard__body"><span class="rcard__cat">🍚 Rice Dish · Hyderabadi</span><h3 class="rcard__title">Vegetable Biryani</h3><p class="rcard__desc">Fragrant basmati rice layered with spiced vegetables, saffron milk, and caramelised onions, dum-cooked to perfection.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 75 min</span><span>👤 5</span></div><a href="recipe-biryani.html" class="rcard__link">View →</a></div></div></article>
+      <article class="rcard"><div class="rcard__img"><img src="https://images.unsplash.com/photo-1666762533664-9b1e3aa84c3a?w=600&q=80" alt="Halwa"/><span class="rcard__level lvl-medium">Medium</span></div><div class="rcard__body"><span class="rcard__cat">🍮 Dessert · Punjabi</span><h3 class="rcard__title">Gajar Ka Halwa</h3><p class="rcard__desc">Slow-cooked grated carrots in full-fat milk and ghee, sweetened and crowned with nuts.</p><div class="rcard__footer"><div class="rcard__meta"><span>⏱ 60 min</span><span>👤 6</span></div><a href="recipe-halwa.html" class="rcard__link">View →</a></div></div></article>
     </div>
   </section>
-
+  <script>document.querySelectorAll('.cat-chip').forEach(b=>{b.addEventListener('click',()=>{document.querySelectorAll('.cat-chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');});});</script>
   <footer class="footer">
-    <div class="footer__top">
-      <div>
-        <span class="footer__logo">Rasoi</span>
-        <span class="footer__logo-deva">रसोई — The Kitchen</span>
-        <p class="footer__tagline">A celebration of Indian cuisine in all its regional, seasonal, and soulful glory.</p>
-      </div>
+    <div class="footer__grid">
+      <div><div class="footer__logo-wrap"><span class="footer__logo">Masala</span><span class="footer__logo-deva">मसाला — The Spice</span></div><p class="footer__desc">A celebration of Indian cuisine.</p></div>
       <div><p class="footer__col-title">Recipes</p><ul class="footer__links"><li><a href="recipe-dal.html">Dal Tadka</a></li><li><a href="recipe-butter-chicken.html">Murgh Makhani</a></li><li><a href="recipe-palak.html">Palak Paneer</a></li><li><a href="recipe-biryani.html">Veg Biryani</a></li><li><a href="recipe-halwa.html">Gajar Ka Halwa</a></li></ul></div>
       <div><p class="footer__col-title">Pages</p><ul class="footer__links"><li><a href="index.html">Home</a></li><li><a href="recipes.html">All Recipes</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><p class="footer__col-title">Categories</p><ul class="footer__links"><li><a href="recipes.html">🥦 Vegetarian</a></li><li><a href="recipes.html">🍗 Non-Veg</a></li><li><a href="recipes.html">🍚 Rice Dishes</a></li><li><a href="recipes.html">🍮 Desserts</a></li></ul></div>
     </div>
-    <div class="footer__bottom">
-      <p class="footer__copy">© 2025 <span>Rasoi</span> · Web Development Assignment · <span>Vedant Sharma</span></p>
-    </div>
+    <div class="footer__bottom"><p class="footer__copy">© 2025 <span>Masala</span> · Web Dev Assignment · <span>Vedant Sharma</span></p></div>
   </footer>
-
-  <script>
-    document.getElementById('hamburger').addEventListener('click', () =>
-      document.getElementById('nav-links').classList.toggle('open'));
-    document.querySelectorAll('.cat-chip').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.cat-chip').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      });
-    });
-  </script>
+  <script>document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('nav-links').classList.toggle('open'));</script>
 </body>
 </html>
